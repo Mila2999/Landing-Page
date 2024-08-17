@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from 'react';
-import Logo from '../Assets/Logo.svg';
+// import Logo from '../Assets/Logo.svg';
 import { BsCart2 } from 'react-icons/bs';
 import { HiOutlineBars3 } from 'react-icons/hi2';
 import Box from '@mui/material/Box';
@@ -23,33 +23,38 @@ const Navbar = () => {
     {
       text: 'Home',
       icon: <HomeIcon />,
+      path: <HomeIcon />,
     },
     {
       text: 'About',
       icon: <InfoIcon />,
+      path: <InfoIcon />,
     },
     {
       text: 'Testimonials',
       icon: <CommentRoundedIcon />,
+      path: <CommentRoundedIcon />,
     },
     {
       text: 'Contact',
       icon: <PhoneRoundedIcon />,
+      path: <PhoneRoundedIcon />,
     },
     {
       text: 'Cart',
       icon: <ShoppingCartRoundedIcon />,
+      path: <ShoppingCartRoundedIcon />,
     },
   ];
   return (
     <nav>
       <div className="nav-logo-container">{/* <img src={Logo} alt="" /> */}</div>
       <div className="navbar-links-container">
-        <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Testimonials</a>
-        <a href="">Contact</a>
-        <a href="">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+        <a href="#cart">
           <BsCart2 className="navbar-cart-icon" />
         </a>
         <button className="primary-button">Bookings Now</button>
